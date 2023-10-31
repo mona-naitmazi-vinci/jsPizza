@@ -1,0 +1,19 @@
+###CREATE a pizza
+POST http://localhost:80/pizzas
+Content-Type : application/json
+
+{
+    "title" : "Magic Green",
+    "content" : "Brocolis, épinards, olivers vertes, basilic"
+}
+
+###DELETE a pizza
+DELETE http://localhost:80/pizzas/2
+
+###UPDATE a pizza
+PATCH http://localhost:80/pizzas/1
+Content-Type : application/json
+
+{
+    "title" : "Quattro Formaggi"
+}
